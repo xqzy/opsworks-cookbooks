@@ -1,0 +1,3 @@
+I, [2015-10-22T00:12:33.400807 #1184]  INFO -- Kitchen: -----> Starting Kitchen (v1.4.2)
+I, [2015-10-22T00:12:33.450844 #1184]  INFO -- Kitchen: -----> Destroying <default-amazon>...
+I, [2015-10-22T00:12:34.132133 #1184]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.73s)

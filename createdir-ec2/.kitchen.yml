@@ -1,0 +1,24 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: pythkaggle
+  region: ap-southeast-2
+  require_chef_omnibus: true
+
+provisioner:
+  name: chef_solo
+
+transport:
+  ssh_key: ../ec2_keys/pythkaggle.pem
+  username: ec2-user
+
+platforms:
+  - name: amazon
+    driver:
+      image_id: ami-29990e13
+
+suites:
+  - name: default
+    run_list:
+      - recipe[createdir-ec2::default]
+    attributes:
